@@ -4,7 +4,7 @@ export default function Links({arr}) {
         <>
             {
             arr.map(({id, name, age}, idx) => (
-                <h5>{name}</h5>
+                <h5 key={idx}>{name}</h5>
             ))
         }
         </>
